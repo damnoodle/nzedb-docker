@@ -1,4 +1,4 @@
-**This project is no longer maintained. Feel free to fork and create your own version.**
+**This project is forked for my personal use and is no longer maintained by razorgirl. Only changes are to newer versions of alpine linux and packages. This is untested and maybe broken !!!.**
 
 # nzedb-docker
 
@@ -6,10 +6,10 @@ A Dockerfile to create a full [nZEDb](https://github.com/nZEDb/nZEDb) install in
 
 Based on:
 
-* Alpine Linux 3.3
-* MariaDB 10.1.19
-* PHP 5.6.29
-* nginx/1.10.1
+* Alpine Linux 3.14
+* MariaDB 10.5.13-r0
+* PHP 7.4.26-r0
+* nginx/1.20.2-r0
 
 Most extras get installed, including `htop`, `vnstat`, `bwm-ng`, `mytop`, `memcached`, `ffmpeg`, `mediainfo`, `p7zip`, `unrar` and `lame`.
 
