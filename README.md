@@ -1,4 +1,4 @@
-**This project is forked for my personal use and is no longer maintained by razorgirl. Only changes are to newer versions of alpine linux and packages. This is untested and maybe broken !!!.**
+**This project is forked from, and is no longer maintained by, razorgirl. This repo is for my personal use. As such, everything is untested and surly broken!!!. Only changes are newer versions of alpine linux and packages.**
 
 # nzedb-docker
 
