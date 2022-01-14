@@ -4,11 +4,11 @@
 #
 
 # Use baseimage-docker
-FROM alpine:3.3
-MAINTAINER razorgirl <https://github.com/razorgirl>
+FROM alpine:3.14
+MAINTAINER damnoodle <https://github.com/damnoodle>
 
 # Set correct environment variables.
-ENV TZ Europe/London
+ENV TZ America/Chicago
 ENV HOME /root
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
@@ -31,7 +31,7 @@ RUN \
   chown -R www-data /run/nginx
 
 # Expose ports
-EXPOSE 8800
+EXPOSE 8765
 
 # Run.
 CMD ["nginx"]
