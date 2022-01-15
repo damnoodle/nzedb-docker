@@ -22,7 +22,7 @@ RUN \
 #RUN \
 #  set -x && \
 #  addgroup --gid=82 -S www-data && \
-#  adduser --uid=82 -D -S -G www-data www-data
+ adduser --uid=82 -D -S -G www-data www-data
 
 # Install basic software. ***removed: man****
 RUN apk add curl git mandoc unzip vim wget tmux chrony build-base
