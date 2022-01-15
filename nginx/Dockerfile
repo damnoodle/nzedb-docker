@@ -20,10 +20,10 @@ RUN \
   apk upgrade
 
 # Install and configure nginx.
-RUN \
-  set -x && \
-  addgroup -g 82 -S www-data && \
-  adduser -u 82 -D -S -G www-data www-data
+#RUN \
+#  set -x && \
+#  addgroup -g 82 -S www-data && \
+#  adduser -u 82 -D -S -G www-data www-data
 RUN apk add nginx
 ADD nginx.conf /etc/nginx/nginx.conf
 RUN \
