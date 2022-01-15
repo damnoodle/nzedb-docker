@@ -27,7 +27,7 @@ RUN \
 RUN apk add nginx
 ADD nginx.conf /etc/nginx/nginx.conf
 RUN \
-  mkdir /run/nginx && \
+  #mkdir /run/nginx && \
   chown -R www-data /run/nginx
 
 # Expose ports
