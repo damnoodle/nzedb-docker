@@ -85,20 +85,20 @@ RUN sed -ri 's/(memory_limit =) ([0-9]+)/\1 -1/' /etc/php7/php.ini
 RUN sed -ri 's/;(date.timezone =)/\1 America\/Chicago/' /etc/php7/php.ini
 
 # Setup the Composer installer.
-RUN \
+#RUN \
   #curl -o /tmp/composer-setup.php https://getcomposer.org/installer && \
   #curl -o /tmp/composer-setup.sig https://composer.github.io/installer.sig && \
   #php -r "if (hash('SHA384', file_get_contents('/tmp/composer-setup.php')) !== trim(file_get_contents('/tmp/composer-setup.sig'))) { unlink('/tmp/composer-setup.php'); echo 'Invalid installer' . PHP_EOL; exit(1); }" && \
   #cd /tmp && \
   #php composer-setup.php --version=1.0.0 --install-dir=/usr/local/bin --filename=composer
   
-  echo $(whoami)
-  curl -o /tmp/composer https://getcomposer.org/download/1.0.0/composer.phar \
-  ls -la /tmp/composer \
-  chmod +x /tmp/composer \
-  ls -la /tmp/composer \
-  mv /tmp/composer /usr/local/bin/composer \
-  ls -la /usr/local/bin/composer
+RUN echo $(whoami)
+RUN curl -o /tmp/composer https://getcomposer.org/download/1.0.0/composer.phar
+RUN ls -la /tmp/composer
+RUN chmod +x /tmp/composer
+RUN ls -la /tmp/composer
+RUN mv /tmp/composer /usr/local/bin/composer
+RUN ls -la /usr/local/bin/composer
  
 
 
