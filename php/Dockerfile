@@ -25,10 +25,10 @@ RUN apk add git php7 php7-pear php7-gd php7-mysql php7-curl php7-json php7-phar 
 # RUN sed -ri 's/;(date.timezone =)/\1 Europe\/London/' /etc/php7/php.ini
 ADD php.ini /etc/php7/php.ini
 ADD php-fpm.conf /etc/php7/php-fpm.conf
-RUN \
-  set -x && \
-  addgroup -g 82 -S www-data && \
-  adduser -u 82 -D -S -G www-data www-data
+#RUN \
+#  set -x && \
+#  addgroup -g 82 -S www-data && \
+#  adduser -u 82 -D -S -G www-data www-data
 
 # Install simple_php_yenc_decode.
 # Commented out because it causes problems.
