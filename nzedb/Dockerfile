@@ -92,8 +92,13 @@ RUN \
   #cd /tmp && \
   #php composer-setup.php --version=1.0.0 --install-dir=/usr/local/bin --filename=composer
   
-  curl -o /usr/local/bin/composer https://getcomposer.org/download/1.0.0/composer.phar \
-  chmod +x /usr/local/bin/composer
+  echo $(whoami)
+  curl -o /tmp/composer https://getcomposer.org/download/1.0.0/composer.phar \
+  ls -la /tmp/composer \
+  chmod +x /tmp/composer \
+  ls -la /tmp/composer \
+  mv /tmp/composer /usr/local/bin/composer \
+  ls -la /usr/local/bin/composer
  
 
 
