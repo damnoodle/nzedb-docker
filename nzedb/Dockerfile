@@ -25,7 +25,7 @@ RUN \
 #  adduser --uid=82 -D -S -G www-data www-data
 
 # Install basic software. ***removed: man****
-RUN apk add curl git unzip vim wget tmux chrony build-base
+RUN apk add curl git mandoc unzip vim wget tmux chrony build-base
 
 # Install additional software.
 # (tcptrack and nmon won't work on Alpine Linux)
