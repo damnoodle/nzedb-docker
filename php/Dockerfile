@@ -19,7 +19,7 @@ RUN \
   apk upgrade
 
 # Install PHP.
-RUN apk add git php7 php7-pear php7-gd php7-mysql php7-curl php7-json php7-phar php7-imagick php7-pdo_mysql php7-mcrypt php7-common php7-xml php7-openssl php7-zlib php7-ctype php7-exif php7-iconv php7-sockets php7-fpm memcached php7-memcache
+RUN apk add git php7 php7-pear php7-gd php7-mysqli php7-curl php7-json php7-phar php7-imagick php7-pdo_mysql php7-mcrypt php7-common php7-xml php7-openssl php7-zlib php7-ctype php7-exif php7-iconv php7-sockets php7-fpm memcached php7-memcache
 # RUN sed -ri 's/(max_execution_time =) ([0-9]+)/\1 120/' /etc/php7/php.ini
 # RUN sed -ri 's/(memory_limit =) ([0-9]+)/\1 -1/' /etc/php7/php.ini
 # RUN sed -ri 's/;(date.timezone =)/\1 Europe\/London/' /etc/php7/php.ini
