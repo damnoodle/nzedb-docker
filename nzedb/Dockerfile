@@ -90,7 +90,7 @@ RUN \
   curl -o /tmp/composer-setup.sig https://composer.github.io/installer.sig && \
   php -r "if (hash('SHA384', file_get_contents('/tmp/composer-setup.php')) !== trim(file_get_contents('/tmp/composer-setup.sig'))) { unlink('/tmp/composer-setup.php'); echo 'Invalid installer' . PHP_EOL; exit(1); }" && \
   cd /tmp && \
-  php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+  php composer-setup.php --version=1.0.0 --install-dir=/usr/local/bin --filename=composer
 
 # Clone nZEDb master.
 RUN git clone https://github.com/nZEDb/nZEDb.git /var/www/nZEDb
