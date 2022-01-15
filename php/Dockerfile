@@ -49,7 +49,7 @@ RUN \
   cd /tmp && \
   mkdir -p yydecode && \
   cd yydecode && \
-  wget http://netassist.dl.sourceforge.net/project/yydecode/yydecode/0.2.10/yydecode-0.2.10.tar.gz && \
+  wget https://qa.debian.org/watch/sf.php/yydecode/yydecode-0.2.10.tar.gz && \
   tar xf yydecode-0.2.10.tar.gz && \
   cd yydecode-0.2.10 && \
   ./configure && \
