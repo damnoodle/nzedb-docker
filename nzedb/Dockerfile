@@ -66,7 +66,7 @@ RUN apk add ffmpeg unrar lame p7zip
 
 # Install Python modules.
 RUN \
-  apk add python python3 py-pip && \
+  apk add python2 python3 py-pip && \
   pip install --upgrade pip && \
   pip install cymysql && \
   pip install pynntp && \
