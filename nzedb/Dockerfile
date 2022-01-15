@@ -19,10 +19,10 @@ RUN \
   apk upgrade
 
 # Create www-data user.
-RUN \
-  set -x && \
-  addgroup -g 82 -S www-data && \
-  adduser -u 82 -D -S -G www-data www-data
+#RUN \
+#  set -x && \
+#  addgroup --gid=82 -S www-data && \
+#  adduser --uid=82 -D -S -G www-data www-data
 
 # Install basic software.
 RUN apk add curl git man unzip vim wget tmux chrony build-base
